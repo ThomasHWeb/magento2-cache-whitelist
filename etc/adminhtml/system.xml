@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="system">
+            <group id="full_page_cache">
+                <group id="cache_whitelist" translate="label" sortOrder="610" showInDefault="1">
+                    <label>Cache Whitelist</label>
+                    <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1">
+                        <label>Enable</label>
+                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    </field>
+                    <field id="keys" translate="label comment" type="text" sortOrder="2" showInDefault="1">
+                        <label>Parameters Keys</label>
+                        <comment>Separate keys by comma.</comment>
+                    </field>
+                </group>
+            </group>
+        </section>
+    </system>
+</config>
